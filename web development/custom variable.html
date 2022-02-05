@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom variable</title>
+    <style>
+        /* it is use as a global variable */
+        :root{
+    --box-color:rgb(240, 47, 127);
+
+        }
+.box{
+    /* --box-color:rgb(240, 47, 127); */
+    width: 120px;
+    height: 120px;
+    background-color: var(--box-color);
+    border: 3px solid red;
+    box-shadow: 4px 4px --var(--box-color);
+    margin: 10px 10px;
+}
+.container{
+    /* --box-color:rgb(240, 47, 127); */
+align-items: center;
+    display: flex;
+    justify-content: center;
+    /* background-color: var(--box-color); */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

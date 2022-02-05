@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food website</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root {
+            --navbar-height: 59px;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 0px;
+        }
+
+        #logo {
+            margin: 28px
+        }
+
+        #logo img {
+            margin: -25px -28px;
+            height: 64px;
+        }
+
+        li {
+            font-size: 10px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #navbar ul li {
+            /* display: flex; */
+            list-style: none;
+            font-size: 1.3rem;
+
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 0px 8px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            background-color: tomato;
+
+        }
+
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+
+        #home::before {
+            content: "";
+            /* background-color: url(''); */
+            background: url('bg.jpg');
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+
+        }
+
+        #home h1 {
+            color: white;
+            text-align: center;
+        }
+
+        #home p {
+            color: white;
+            text-align: center;
+        }
+
+        .h-primary {
+            font-size: 3.8rem;
+            padding: 10px;
+
+        }
+
+        .btn {
+            padding: 5px 18px;
+            border: 3px solid white;
+            background-color: #5e7b79;
+            margin: 1px;
+            color: white;
+            font-size: 1.1rem;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="MyonlineMeal.com">
+        </div>
+
+        <ul>
+            <li class="class"><a href="#">Home</a></li>
+            <li class="class"><a href="#">service</a></li>
+            <li class="class"><a href="#">About us</a></li>
+            <li class="class"><a href="#">Contact us </a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to MyOlineMeal.com</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nobis nisi dolore cum, porro error.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit </p>
+        <button class="btn">Order now</button>
+    </section>
+    <section class="services-container">
+        <h1 class="h-primary center">our services</h1>
+        <div class="services"></div>
+    </section>
+</body>
+
+</html>

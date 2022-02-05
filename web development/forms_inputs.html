@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>froms</title>
+</head>
+
+<body>
+    <!--<div> tag is used to divide the line like br-->
+    <!--i dont like to prefer h1 because it is bigger in size that's why im using h2-->
+    <!-- <h1>In this there will be HTML forms</h1> -->
+    <h2> This is HTML forms made by pushpak</h2>
+    <form action="backend.php">
+        <label for="name"> Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <!-- <hr> -->
+        <br>
+        <div>
+            Roll: <input type="text" name="myRoll">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="date">
+        </div>
+        <br>
+        <div>
+            bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            Are You Eligible: <input type="checkbox" name="myEligibility" checked> 
+            <!--checked is used default checked option we don't need to tap on it -->
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> female <input type="radio" name="myGender">
+            Other<input type="radio" NAME="myGender">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br> <textarea name="MyText"  cols="90" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="tata">tata</option>
+                <option value="toyota">toyota</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>

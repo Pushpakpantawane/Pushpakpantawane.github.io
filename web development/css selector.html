@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        h1 {
+            background-color: rosybrown;
+            color: saddlebrown;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* div p {
+            color: yellow;
+            background-color: tomato;
+            font-weight: bold;
+        } */
+        
+        /* this will use when p is right after div */
+        div + p {
+            color: yellow;
+            background-color: tomato;
+            font-weight: bold;
+        }
+        /* div > p {
+            color: yellow;
+            background-color: tomato;
+            font-weight: bold;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>pushpak is a web developer</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>
+                        this is paragraph inside li</p>
+                </li>
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+</body>
+
+</html>

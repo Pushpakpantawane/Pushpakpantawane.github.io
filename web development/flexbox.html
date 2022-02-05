@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+
+    <style>
+.container{
+    height:444px;
+    width :100%;
+    border: 3px solid black ;
+    /* initialization of flexbox */
+    display: flex;
+    /* flex property for flex container */
+    flex-direction: row; 
+     /* it is by default thats why nothing will change in flexbox */
+    /* flex-direction: column; */
+     /* it will make all the boxex in coloumn */
+    /* flex-direction: row-reverse; */
+      /* will rever the direction in row it will start from right side and same for colomn */ 
+
+      flex-wrap: wrap;
+      justify-content: center ;
+      justify-content:space-evenly;
+
+      align-items: center;
+      align-items: stretch;
+      align-items: flex-start;
+      
+}
+.item{
+    background-color: tomato;
+    /* display: inline-block; */
+    /* display: inline; */
+    /* display: block; */
+    padding: 3px;
+    margin: 5px;
+    border: 3px solid rgb(10, 245, 174);
+    width: 100px;
+    height: 100px;
+}
+#item1{
+    flex-grow: 3;
+    /* order: 3; */
+}
+#item2{
+    /* flex-grow: 4; */
+    /* flex-shrink: 3; */
+    flex-basis: 260px;
+    /*it set to row flex basis will control width and in colomn height*/
+}
+#item3{
+    align-self: flex-end;
+}
+    
+
+    </style>
+</head>
+<body>
+    <h1>this is flexbox</h1>
+    <div class="container">
+
+        <div class="item" id="item1">first box</div>
+        <div class="item" id="item2">second box </div>
+        <div class="item" id="item3">third box </div>
+        <!-- <div class="item" id="item4">fourth box</div>
+        <div class="item" id="item5">five box</div>
+        <div class="item" id="item6">six box </div> -->
+    </disv>
+</body>
+</html>
